@@ -37,22 +37,29 @@ rand_inx = random.randint(0,2)
 computer_choose = types [rand_inx]
 print(f"Computer choose {computer_choose}")
 
+# if uchoose == rand_inx:
+#     print("Draw")
+# elif uchoose == 0:
+#     if rand_inx == 1:
+#         print("You lose")
+#     else:
+#         print("You Win!!!")
+
+# elif uchoose == 1:
+#     if rand_inx == 2:
+#         print("You lose")
+#     else:
+#         print("You Win!!!")
+
+# elif uchoose == 2:
+#     if rand_inx == 0:
+#         print("You lose")
+#     else:
+#         print("You Win!!!")
+
 if uchoose == rand_inx:
-    print("Draw")
-elif uchoose == 0:
-    if rand_inx == 1:
-        print("You lose")
-    else:
-        print("You Win!!!")
-
-elif uchoose == 1:
-    if rand_inx == 2:
-        print("You lose")
-    else:
-        print("You Win!!!")
-
-elif uchoose == 2:
-    if rand_inx == 0:
-        print("You lose")
-    else:
-        print("You Win!!!")
+   print("Draw")
+elif uchoose > rand_inx:
+   print ("You Win!!:)")
+else:
+  print ("You lose :(")
